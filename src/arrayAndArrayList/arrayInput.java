@@ -13,8 +13,13 @@ public class arrayInput {
         }
 
         // printing the array
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+        // for (int i = 0; i < arr.length; i++) {
+        //     System.out.print(arr[i] + " ");
+        // }
+
+        // using forEach loop
+        for (int num : arr) {
+            System.out.print(num + " ");
         }
     }
 }
