@@ -18,8 +18,12 @@ public class arrayInput {
         // }
 
         // using forEach loop
-        for (int num : arr) {
-            System.out.print(num + " ");
-        }
+        // for (int num : arr) {
+        //     System.out.print(num + " ");
+        // }
+
+        // using toString method
+
+        System.out.println(Arrays.toString(arr));
     }
 }
