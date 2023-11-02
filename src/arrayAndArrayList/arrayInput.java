@@ -5,12 +5,14 @@ import java.util.*;
 public class arrayInput {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int arr[] = new int[5];
+
+        // array of primitive
+        // int arr[] = new int[5];
 
         // input using for loop
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = sc.nextInt();
-        }
+        // for (int i = 0; i < arr.length; i++) {
+        //     arr[i] = sc.nextInt();
+        // }
 
         // printing the array
         // for (int i = 0; i < arr.length; i++) {
@@ -24,6 +26,13 @@ public class arrayInput {
 
         // using toString method
 
-        System.out.println(Arrays.toString(arr));
+        // System.out.println(Arrays.toString(arr));
+
+        // Array of objects
+        String str[] = new String[4];
+        for (int i = 0; i < str.length; i++) {
+            str[i] = sc.next();
+        }
+        System.out.println(Arrays.toString(str));
     }
 }
