@@ -4,7 +4,7 @@ package functionsInJava;
 
 public class armstrongNums {
 
-    static boolean armstrong(int n){
+    static boolean isArmstrong(int n){
         int original = n;
         int sum = 0;
         while(n>0){
@@ -16,6 +16,10 @@ public class armstrongNums {
         return sum == original;
     }
     public static void main(String[] args) {
-        System.out.println(armstrong(153));
+        for (int i = 100; i < 1000; i++) {
+            if (isArmstrong(i)) {
+                System.out.print(i + " ");
+            }
+        }
     }
 }
