@@ -1,6 +1,6 @@
 package searching;
 
-// Binary search in a row and column wise sorted matrix
+// Searching in a row and column wise sorted matrix
 
 import java.util.Arrays;
 
@@ -28,7 +28,7 @@ public class BSin2dArray {
                 {28,29,37,49},
                 {33,34,38,50}
             };
-        int target = 45;
+        int target = 39;
         System.out.println(Arrays.toString(search(arr, target)));
     }
 }
