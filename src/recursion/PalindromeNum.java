@@ -1,20 +1,12 @@
 package recursion;
 
-public class ReverseNum {
+public class PalindromeNum {
     public static void main(String[] args) {
-        System.out.println(reverse2(8573));
+        int n = 1284801;
+        boolean isPalindrome = (n == reverse2(n));
+        System.out.println(isPalindrome);
     }
 
-    // static int sum = 0;
-    // static void reverse(int n){
-    //     if (n == 0) {
-    //         return;
-    //     }
-
-    //     int rem = n%10;
-    //     sum = (sum*10) + rem;
-    //     reverse(n/10);
-    // }
     static int reverse2(int n){
         int digits = (int)(Math.log10(n)) + 1;
         return helper(n,digits);
